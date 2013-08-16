@@ -1,0 +1,247 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		384BFC5217BE4BF1008E210E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384BFC5117BE4BF1008E210E /* Foundation.framework */; };
+		384BFC5717BE4BF1008E210E /* libooc.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 384BFC5617BE4BF1008E210E /* libooc.h */; };
+		384BFC5917BE4BF1008E210E /* libooc.m in Sources */ = {isa = PBXBuildFile; fileRef = 384BFC5817BE4BF1008E210E /* libooc.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		384BFC4C17BE4BF1008E210E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				384BFC5717BE4BF1008E210E /* libooc.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		384BFC4E17BE4BF1008E210E /* liblibooc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibooc.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		384BFC5117BE4BF1008E210E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		384BFC5517BE4BF1008E210E /* libooc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libooc-Prefix.pch"; sourceTree = "<group>"; };
+		384BFC5617BE4BF1008E210E /* libooc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libooc.h; sourceTree = "<group>"; };
+		384BFC5817BE4BF1008E210E /* libooc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libooc.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		384BFC4B17BE4BF1008E210E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384BFC5217BE4BF1008E210E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		384BFC4517BE4BF1008E210E = {
+			isa = PBXGroup;
+			children = (
+				384BFC5317BE4BF1008E210E /* libooc */,
+				384BFC5017BE4BF1008E210E /* Frameworks */,
+				384BFC4F17BE4BF1008E210E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		384BFC4F17BE4BF1008E210E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				384BFC4E17BE4BF1008E210E /* liblibooc.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		384BFC5017BE4BF1008E210E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				384BFC5117BE4BF1008E210E /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		384BFC5317BE4BF1008E210E /* libooc */ = {
+			isa = PBXGroup;
+			children = (
+				384BFC5617BE4BF1008E210E /* libooc.h */,
+				384BFC5817BE4BF1008E210E /* libooc.m */,
+				384BFC5417BE4BF1008E210E /* Supporting Files */,
+			);
+			path = libooc;
+			sourceTree = "<group>";
+		};
+		384BFC5417BE4BF1008E210E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				384BFC5517BE4BF1008E210E /* libooc-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		384BFC4D17BE4BF1008E210E /* libooc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 384BFC5C17BE4BF1008E210E /* Build configuration list for PBXNativeTarget "libooc" */;
+			buildPhases = (
+				384BFC4A17BE4BF1008E210E /* Sources */,
+				384BFC4B17BE4BF1008E210E /* Frameworks */,
+				384BFC4C17BE4BF1008E210E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libooc;
+			productName = libooc;
+			productReference = 384BFC4E17BE4BF1008E210E /* liblibooc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		384BFC4617BE4BF1008E210E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Timothy Yeh";
+			};
+			buildConfigurationList = 384BFC4917BE4BF1008E210E /* Build configuration list for PBXProject "libooc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 384BFC4517BE4BF1008E210E;
+			productRefGroup = 384BFC4F17BE4BF1008E210E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				384BFC4D17BE4BF1008E210E /* libooc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		384BFC4A17BE4BF1008E210E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384BFC5917BE4BF1008E210E /* libooc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		384BFC5A17BE4BF1008E210E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		384BFC5B17BE4BF1008E210E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		384BFC5D17BE4BF1008E210E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libooc.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libooc/libooc-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		384BFC5E17BE4BF1008E210E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libooc.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libooc/libooc-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		384BFC4917BE4BF1008E210E /* Build configuration list for PBXProject "libooc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384BFC5A17BE4BF1008E210E /* Debug */,
+				384BFC5B17BE4BF1008E210E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		384BFC5C17BE4BF1008E210E /* Build configuration list for PBXNativeTarget "libooc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384BFC5D17BE4BF1008E210E /* Debug */,
+				384BFC5E17BE4BF1008E210E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 384BFC4617BE4BF1008E210E /* Project object */;
+}
