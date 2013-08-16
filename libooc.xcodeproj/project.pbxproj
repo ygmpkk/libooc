@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		384BFC5217BE4BF1008E210E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384BFC5117BE4BF1008E210E /* Foundation.framework */; };
 		384BFC5717BE4BF1008E210E /* libooc.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 384BFC5617BE4BF1008E210E /* libooc.h */; };
-		384BFC5917BE4BF1008E210E /* libooc.m in Sources */ = {isa = PBXBuildFile; fileRef = 384BFC5817BE4BF1008E210E /* libooc.m */; };
+		384BFC9717BE50F6008E210E /* linkooc.mm in Sources */ = {isa = PBXBuildFile; fileRef = 384BFC9617BE50F6008E210E /* linkooc.mm */; };
+		384BFC9917BE5900008E210E /* linkoocapp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 384BFC9817BE5900008E210E /* linkoocapp.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +31,9 @@
 		384BFC5117BE4BF1008E210E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		384BFC5517BE4BF1008E210E /* libooc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libooc-Prefix.pch"; sourceTree = "<group>"; };
 		384BFC5617BE4BF1008E210E /* libooc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libooc.h; sourceTree = "<group>"; };
-		384BFC5817BE4BF1008E210E /* libooc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libooc.m; sourceTree = "<group>"; };
+		384BFC9417BE50D7008E210E /* linkooc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linkooc.h; sourceTree = "<group>"; };
+		384BFC9617BE50F6008E210E /* linkooc.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = linkooc.mm; sourceTree = "<group>"; };
+		384BFC9817BE5900008E210E /* linkoocapp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = linkoocapp.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +77,10 @@
 			isa = PBXGroup;
 			children = (
 				384BFC5617BE4BF1008E210E /* libooc.h */,
-				384BFC5817BE4BF1008E210E /* libooc.m */,
 				384BFC5417BE4BF1008E210E /* Supporting Files */,
+				384BFC9617BE50F6008E210E /* linkooc.mm */,
+				384BFC9417BE50D7008E210E /* linkooc.h */,
+				384BFC9817BE5900008E210E /* linkoocapp.cpp */,
 			);
 			path = libooc;
 			sourceTree = "<group>";
@@ -139,7 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				384BFC5917BE4BF1008E210E /* libooc.m in Sources */,
+				384BFC9717BE50F6008E210E /* linkooc.mm in Sources */,
+				384BFC9917BE5900008E210E /* linkoocapp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,9 +209,10 @@
 				DSTROOT = /tmp/libooc.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libooc/libooc-Prefix.pch";
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -216,8 +223,10 @@
 				DSTROOT = /tmp/libooc.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libooc/libooc-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
