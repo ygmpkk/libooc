@@ -6,8 +6,19 @@
 //  Copyright (c) 2013 Timothy Yeh. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <CoreFoundation/CoreFoundation.h>
 
-@interface libooc : NSObject
+@interface LibOOC : NSObject
+
+-(NSString *)Send:(NSString *)message;
 
 @end
+
+
+
+//#import "libooc.h"
+//@implementation LibOOC
+//-(NSString *)Send:(NSString *)message{
+//    return @"From Library: %@", message;
+//}
+//@end
